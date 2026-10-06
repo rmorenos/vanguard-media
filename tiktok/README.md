@@ -31,3 +31,13 @@ TikTok version of the Instagram batch in `ig/`. Buffer publishes to the TikTok c
 | Thu Oct 22, 7:00 pm | Photos | `tiktok/fotos/03-*` | Driveways from $100. What changes the price? |
 | Mon Oct 26, 7:00 pm | Photos | `tiktok/fotos/04-*` | Bring a neighbor, you both win |
 | Thu Oct 29, 7:00 pm | Photos | `tiktok/fotos/05-*` | Why your bins attract flies |
+
+## New reels
+
+`tools/reel.py` builds a 9:16 reel with no people: branded cards, a synthetic voiceover (Kokoro TTS, English scenes and a Spanish closing line) and the "Text CLEAN" end card. Write a spec in `tiktok/specs/`, render it to `tiktok/videos/`, and set `isAiGenerated` on the Buffer post.
+
+```
+python3 -m pip install kokoro-onnx soundfile
+# model files from github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0 into /tmp/claude-0/tts
+python3 tools/reel.py tiktok/specs/t01-hojas-otono.json tiktok/videos/t01-hojas-otono.mp4
+```

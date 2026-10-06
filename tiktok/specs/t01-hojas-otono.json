@@ -1,0 +1,11 @@
+{
+  "tag": "LOUISVILLE · FALL CLEANUP",
+  "scenes": [
+    {"title": "Fall leaves leave\na green film", "sub": "Las hojas de otoño dejan\nuna capa verde",
+     "say": "Those fall leaves leave a slippery green film on your driveway.", "lang": "en"},
+    {"title": "It gets slippery\nand stains", "sub": "Resbala y mancha",
+     "say": "It gets slippery when it rains, and it stains the concrete.", "lang": "en"},
+    {"big": "$100", "title": "2-car driveway", "sub": "Driveway de 2 carros",
+     "say": "We wash a two car driveway from one hundred dollars. Send us a photo for your price.", "lang": "en"}
+  ]
+}
